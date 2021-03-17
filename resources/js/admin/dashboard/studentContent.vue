@@ -4,24 +4,23 @@
         <!-- Main content -->
         <section class="content">
         <div class="container-fluid">
-            <secondary-header/>
+            <student-dashboard />
         </div>
         </section>
-        <!-- /.content -->
     </div>
 </template>
 <script>
-import secondaryHeader from '../header/secondaryHeader'; 
 import contentHeader from '../header/contentHeader';
+import StudentDashboard from './student/studentDashboard.vue';
 export default {
     data: function () {
         return{
-            title : "Dashboard"
+            title : "Student Manager"
         }
     },
      components : {
-         secondaryHeader,
-         contentHeader
+        contentHeader,
+        StudentDashboard,
      }
 }
 </script>

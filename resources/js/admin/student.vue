@@ -3,7 +3,7 @@
     <navbar/>
     <sidebar/>
     <div class="content-wrapper">
-      <dashboard-content />
+      <student-content />
     </div>
   </div>
 </template>
@@ -11,11 +11,13 @@
 import navbar from './header/navbar';
 import sidebar from './sidebar/sidebar';
 import dashboardContent from './dashboard/dashboardContent';
+import StudentContent from './dashboard/studentContent.vue';
 export default {
     components : {
-      navbar,
-      sidebar,
-      dashboardContent
+        navbar,
+        sidebar,
+        dashboardContent,
+        StudentContent,
     }
 }
 </script>
