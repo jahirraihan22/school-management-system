@@ -4,19 +4,15 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import App from './admin/app.vue';
-import Student from './admin/student.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
     {
-        path: '/dashboard',
+        path: '/',
         component: App
     },
-    {
-        path: '/student',
-        component: Student
-    }
+    
 ]
 
 const router = new VueRouter({
